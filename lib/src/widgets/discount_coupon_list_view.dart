@@ -7,7 +7,7 @@ class DiscountCouponListView extends StatelessWidget {
     super.key,
   });
 
-  static const routeName = '/';
+  static const routeName = '/discount_coupons';
 
   @override
   Widget build(BuildContext context) {

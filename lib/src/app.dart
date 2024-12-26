@@ -6,6 +6,7 @@ import 'sample_feature/sample_item_details_view.dart';
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
 import 'widgets/discount_coupon_list_view.dart';
+import 'screens/home_screen.dart'; // Import the HomeScreen
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
@@ -72,8 +73,9 @@ class MyApp extends StatelessWidget {
                   case SampleItemDetailsView.routeName:
                     return const SampleItemDetailsView();
                   case DiscountCouponListView.routeName:
-                  default:
                     return const DiscountCouponListView();
+                  default:
+                    return const HomeScreen(); // Set HomeScreen as the default route
                 }
               },
             );
